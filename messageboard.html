@@ -15,6 +15,50 @@
       <link href="assets/css/swiper-bundle.min.css" rel="stylesheet"/>
       <link href="assets/css/slick.min.css" rel="stylesheet"/>
       <link href="assets/css/slick-theme.min.css" rel="stylesheet"/>
+      <link href="assets/css/review.css" rel="stylesheet"/>
+      <style>
+         #bo_v_title {
+         font-size: 0;
+         padding: 25px 10px 22px;
+         border-top: 1px solid #333;
+         border-bottom: 1px solid #d9d9d9;
+         }    
+         .bo_v_tit_wr {
+         display: inline-block;
+         vertical-align: top;
+         width: calc(100% - 130px);
+         }
+         #bo_v_title .bo_v_tit {
+         font-size: 26px;
+         font-weight: 500;
+         color: #0f0f0f;
+         display: inline-block;
+         vertical-align: middle;
+         margin: 0;
+         }
+         #bo_v_title .bo_v_date {
+         padding-top: 6px;
+         font-size: 16px;
+         font-weight: 300;
+         color: #999;
+         margin-top: 5px;
+         display: block;
+         }
+         #bo_v_con {
+         margin: 0;
+         padding: 30px 20px 50px;
+         }
+         #bo_v_con {
+         width: 100%;
+         line-height: 1.7em;
+         min-height: 200px;
+         word-break: break-all;
+         overflow: hidden;
+         }
+         #bo_v_con {
+         font-size: 18px;
+         }
+      </style>
    </head>
    <body>
       <div id="wrap">
@@ -188,102 +232,53 @@
          </nav>
          <!-- E: header -->
          <!-- S : key_visual -->
-         <div id="sub_key_visual">
-            <div class="key_visual img_option investment">
-               <div class="txt_box">
-                  <p class="en_up fnt_roto">Login</p>
-                  <h2>로그인</h2>
+         <div id="sub-visual" class="bg-cover" style="margin-top: 0px; background-image: url(img/1product_key_visual.webp);">
+            <div class="c">
+               <div class="content white">
+                  <div class="title animated fadeInUp">쪽지함</div>
                </div>
             </div>
          </div>
          <!-- E : key_visual -->
-         <main id="middler" class="sub mypage login">
-            <article class="layout" style="
-               ">
-               <section class="loginzone" style="
-                  width: 100%;
-                  max-width: 500px;
-                  height: 510px;
-                  background-color: #fff;
-                  margin: 0 auto;
-                  border-radius: 14px;
-                  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.2);
-                  /* margin-top: 100px; */
-                  ">
-                  <h3 class="subtitle" style="
-                     padding-top: 50px;
-                     ">
-                     <div class="summary" style="
-                        text-align: center;
-                        margin-top: 14px;
-                        ">HU이노베이션 »윈텍스에 오신것을 환영합니다.</div>
+         <main id="middler" class="sub sub07 sub07_2" style="
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 40px;
+            ">
+            <article class="layout">
+               <section class="noticezone fade-section visible">
+                  <h3 class="subtitle">
+                     <div class="title" style="
+                        margin-bottom: 40px;
+                        ">쪽지함</div>
                   </h3>
-                  <form name="loginfrm" id="loginfrm" novalidate="novalidate" style="
-                     padding-top: 20px;
-                     ">
-                     <div class="box">
-                        <div class="row">
-                           <div style="
-                              width: 100%;
-                              text-align: center;
-                              margin: 0 auto;
-                              border: 1px solid #ededed;
-                              border-radius: 8px;
-                              display: flex;
-                              align-items: center;
-                              ">
-                              <input required data-v-7c76ccf1="" placeholder="아이디" id="member_id" type="text" name="member_id" class="" style="
-                                 width: 100%;
-                                 height: 60px;
-                                 margin-left: 20px;
-                                 color: #000;
-                                 border: 0px;
-                                 " fdprocessedid="3ao6us">
-                              <img class="input-icons" src="img/input-icons.svg" style="
-                                 ">
-                           </div>
-                        </div>
-                        <div class="row mt-4">
-                           <div style="
-                              width: 100%;
-                              text-align: center;
-                              margin: 0 auto;
-                              border: 1px solid #ededed;
-                              border-radius: 8px;
-                              display: flex;
-                              align-items: center;
-                              ">
-                              <input required data-v-7c76ccf1="" placeholder="비밀번호" id="member_pw" type="password" name="member_pw" class="" style="
-                                 width: 100%;
-                                 height: 60px;
-                                 margin-left: 20px;
-                                 color: #000;
-                                 border: 0px;
-                                 " fdprocessedid="gpkqvv">
-                              <img class="input-icons" src="img/input-icons-1.svg" style="
-                                 ">
-                           </div>
-                        </div>
-                        <div class="row mt-5" style="
-                           margin-top: 30px;
-                           ">
-                           <button type="button" class="btn btn-primary btn-lg" style="
-                              width: 100%;
-                              color: #fff;
-                              height: 56px;
-                              " fdprocessedid="gga09">로그인</button>
-                        </div>
-                        <div class="row" style="
-                           margin: 0px 0px;
-                           ">
-                           <button type="button" class="btn btn-outline-primary btn-lg" onclick="location.href='register.html';"  style="
-                              width: 100%;
-                              height: 56px;
-                              border: 1px solid #cfcece;
-                              " fdprocessedid="ofyoxz">회원가입</button>
-                        </div>
+                  <h2 id="bo_v_title">
+                     <div class="bo_v_tit_wr">
+                        <span class="bo_v_tit">
+                        문의내용 답변 안내</span>
+                        <span class="bo_v_date">2025-09-02 18:55</span>
                      </div>
-                  </form>
+                  </h2>
+                  <section id="bo_v_atc">
+                     <div id="bo_v_share">
+                     </div>
+                     <div id="bo_v_img"></div>
+                     <!-- 본문 내용 시작 { -->
+                     <div id="bo_v_con">
+                        <p>현재 문의 주신 내용은 채팅상담에서 자세한 답변이 가능 합니다.</p>
+                        <p><br></p>
+                        <p><a href="https://direct.lc.chat/19188456/">✅ <span style="color: #0800ff">Hu이노베이션 고객센터 ◀◀◀ 클릭</span></a></p>
+                        <p><br></p>
+                        <p>위 hu이노베이션 고객센터 문구를 클릭하시고</p>
+                        <p><br></p>
+                        <p>✅ 성함과 가입하신 아이디를 말씀 해주세요</p>
+                        <p><br></p>
+                     </div>
+                     <!-- } 본문 내용 끝 -->
+                     <!--  추천 비추천 시작 { -->
+                     <!-- }  추천 비추천 끝 -->
+                  </section>
                </section>
             </article>
          </main>
